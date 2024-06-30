@@ -11,7 +11,7 @@ public class PlayfabManager : MonoBehaviour
 
 {
     [Header("UI")]
-    public Text messageText;
+    public TMP_Text messageText;
     public TMP_InputField emailInput;
     public TMP_InputField passwordInput;
 
@@ -40,7 +40,7 @@ public class PlayfabManager : MonoBehaviour
     }
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
-      //  messageText.text = "Registered and logged in";
+       messageText.text = "Registered and logged in";
         StartCoroutine(WaitForSceneLoad());
     }
     void OnError(PlayFabError error)
