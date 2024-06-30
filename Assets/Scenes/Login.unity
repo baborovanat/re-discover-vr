@@ -1982,6 +1982,7 @@ GameObject:
   - component: {fileID: 953391544}
   - component: {fileID: 953391543}
   - component: {fileID: 953391548}
+  - component: {fileID: 953391549}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2113,6 +2114,18 @@ MonoBehaviour:
   messageText: {fileID: 1812713845}
   emailInput: {fileID: 1036035329}
   passwordInput: {fileID: 78860544}
+--- !u!114 &953391549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953391542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae806a81192c2764b8fb8eb66d67b0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
