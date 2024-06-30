@@ -18,7 +18,7 @@ public class PlayfabManager : MonoBehaviour
     private IEnumerator WaitForSceneLoad()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("Upload");
+        SceneManager.LoadScene("MainScene");
     }
 
 
@@ -40,7 +40,7 @@ public class PlayfabManager : MonoBehaviour
     }
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
-       messageText.text = "Registered and logged in";
+      // messageText.text = "Registered and logged in";
         StartCoroutine(WaitForSceneLoad());
     }
     void OnError(PlayFabError error)
@@ -76,7 +76,7 @@ public class PlayfabManager : MonoBehaviour
     }
     void OnLoginSuccess(LoginResult result)
     {
-       messageText.text = "Logged in!";
+      // messageText.text = "Logged in!";
         Debug.Log("Successful log in");
         GetCharacters();
         StartCoroutine(WaitForSceneLoad());
