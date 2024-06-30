@@ -76,7 +76,7 @@ public class PlayfabManager : MonoBehaviour
     }
     void OnLoginSuccess(LoginResult result)
     {
-      //  messageText.text = "Logged in!";
+       messageText.text = "Logged in!";
         Debug.Log("Successful log in");
         GetCharacters();
         StartCoroutine(WaitForSceneLoad());
